@@ -4,7 +4,7 @@
 #include "fs/Logger.hpp"
 #include "mem/KingPtr.hpp"
 
-namespace botwsavs::core {
+namespace totksavs::core {
 
 bool Controller::TryGetController() {
     if (mpController) {
@@ -37,4 +37,4 @@ u32 Controller::GetHoldKeys() {
     return mpController->getHoldMask();
 }
 
-}  // namespace botwsavs::core
+}  // namespace totksavs::core

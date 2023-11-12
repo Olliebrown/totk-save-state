@@ -7,7 +7,7 @@
 #include "mem/GamePtr.h"
 
 #include "StateLevel2.hpp"
-namespace botwsavs::core {
+namespace totksavs::core {
 
 void StateLevel2::ReadInventoryEquipment(const char* name, uking::ui::PouchItem* pItem,
                                          util::NamedValue<u32, 64>& value) {
@@ -160,4 +160,4 @@ void StateLevel2::WriteToFile(fs::ConfigFile& file) const {
     file.WriteNamedInteger(named(mOverworldEquippedShield));
 }
 
-}  // namespace botwsavs::core
+}  // namespace totksavs::core

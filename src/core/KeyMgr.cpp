@@ -2,7 +2,7 @@
 #include "fs/ConfigFile.hpp"
 #include "fs/Logger.hpp"
 
-namespace botwsavs::core {
+namespace totksavs::core {
 
 bool KeyMgr::DidHoldFor(u32 keys, u32 seconds) {
     if (mHoldingKeys != keys) {
@@ -63,4 +63,4 @@ void KeyMgr::Load(fs::ConfigFile& file) {
     file.ReadInteger(&mKeyRestoreFile);
 }
 
-}  // namespace botwsavs::core
+}  // namespace totksavs::core

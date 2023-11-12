@@ -3,7 +3,7 @@
 #include "Logger.hpp"
 //#include "util/StringBuffer.hpp"
 
-namespace botwsavs::fs {
+namespace totksavs::fs {
 
 bool ConfigFile::Save(const Config& config) {
     if (!mFile.Open()) {
@@ -117,4 +117,4 @@ bool ConfigFile::ReadStringInternal(char* outString, const u32 bufferLength) {
     return true;
 }
 
-}  // namespace botwsavs::fs
+}  // namespace totksavs::fs

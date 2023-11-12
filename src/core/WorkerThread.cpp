@@ -6,7 +6,7 @@
 #include "fs/File.hpp"
 #include "fs/Logger.hpp"
 
-namespace botwsavs::core {
+namespace totksavs::core {
 
 static nn::os::ThreadType sThread;
 
@@ -39,7 +39,7 @@ void StartWorkerThread() {
     const size_t stackSize = 0x80000;
     void* threadStack = memalign(0x1000, stackSize);
 
-    sThread.thread_name_addr = "botwsavs";
+    sThread.thread_name_addr = "totksavs";
     nn::Result result =
         nn::os::CreateThread(&sThread, WorkerMain, nullptr, threadStack, stackSize, 16, 0);
     if (result.IsFailure()) {
@@ -48,4 +48,4 @@ void StartWorkerThread() {
     nn::os::StartThread(&sThread);
 }
 
-}  // namespace botwsavs::core
+}  // namespace totksavs::core

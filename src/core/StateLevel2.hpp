@@ -9,7 +9,7 @@ class PouchItem;
 namespace ksys::act {
 class BaseProc;
 }
-namespace botwsavs::core {
+namespace totksavs::core {
 
 class StateLevel2 : public StateStorage {
 public:
@@ -40,4 +40,4 @@ private:
     util::NamedValue<u32, 64> mOverworldEquippedShield{sInvalid};
 };
 
-}  // namespace botwsavs::core
+}  // namespace totksavs::core

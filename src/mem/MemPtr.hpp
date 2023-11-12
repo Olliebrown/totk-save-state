@@ -4,7 +4,7 @@
 #include "SafePtr.hpp"
 #include "types.h"
 
-namespace botwsavs::mem {
+namespace totksavs::mem {
 
 class MemPtr {
 public:
@@ -48,4 +48,4 @@ private:
     bool mError = false;
 };
 
-}  // namespace botwsavs::mem
+}  // namespace totksavs::mem

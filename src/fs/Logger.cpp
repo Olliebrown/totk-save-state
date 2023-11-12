@@ -3,7 +3,7 @@
 #include <nn/fs.h>
 #include "util/Time.hpp"
 
-namespace botwsavs::fs {
+namespace totksavs::fs {
 
 void Logger::Init() {
     if (mReady) {
@@ -59,4 +59,4 @@ void Logger::Log(const char* level, const FileBuffer& content) {
     mFile.Write(mOutputBuffer);
 }
 
-}  // namespace botwsavs::fs
+}  // namespace totksavs::fs

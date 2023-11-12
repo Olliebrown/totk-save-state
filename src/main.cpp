@@ -7,24 +7,24 @@ extern "C" void application_init() {
     nn::fs::MountSdCardForDebug("sd");
     // Create runtime files
 #ifdef DEBUG
-    botwsavs::fs::File mainLog("sd:/botwsavs/main.log");
+    totksavs::fs::File mainLog("sd:/totksavs/main.log");
     mainLog.Create();
 
     // Initialize Logger
-    botwsavs::fs::Logger::Instance().Init();
+    totksavs::fs::Logger::Instance().Init();
 #endif
-    botwsavs::fs::File latestTxt("sd:/botwsavs/latest.txt");
+    totksavs::fs::File latestTxt("sd:/totksavs/latest.txt");
     latestTxt.Create();
-    botwsavs::fs::File workerTxt("sd:/botwsavs/worker.txt");
+    totksavs::fs::File workerTxt("sd:/totksavs/worker.txt");
     workerTxt.Create();
 
     // Start worker
-    botwsavs::core::StartWorkerThread();
+    totksavs::core::StartWorkerThread();
 }
 
 extern "C" void application_clean() {
 #ifdef DEBUG
     // Close logger
-    botwsavs::fs::Logger::Instance().Close();
+    totksavs::fs::Logger::Instance().Close();
 #endif
 }

@@ -12,7 +12,7 @@ namespace uking::ui{
 struct PouchItem;
 }
 
-namespace botwsavs::mem::GamePtr {
+namespace totksavs::mem::GamePtr {
 // Singletons
 // main[0x2CA6D48] ActorSystem
 
@@ -83,4 +83,4 @@ GamePtrDefine(f32, FlameResistPotionTimer, main[0x2CC4768][0xC0] + 0x130C) // [[
 GamePtrDefine(f32, ShockResistPotionTimer, main[0x2CC4768][0xC0] + 0x1324) // [[main+2CC4768]+C0]+1324
 GamePtrDefine(f32, StealthPotionTimer, main[0x2CC4768][0xC0] + 0x133C) // [[main+2CC4768]+C0]+133C
 
-}  // namespace botwsavs::core::ptr
+}  // namespace totksavs::core::ptr

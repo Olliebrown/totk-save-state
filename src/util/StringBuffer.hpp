@@ -5,7 +5,7 @@
 
 #include "types.h"
 
-namespace botwsavs::util {
+namespace totksavs::util {
 
 template <u32 L>
 class StringBuffer {
@@ -84,4 +84,4 @@ private:
     u32 mLen;
 };
 
-}  // namespace botwsavs::util
+}  // namespace totksavs::util

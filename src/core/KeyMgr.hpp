@@ -2,7 +2,7 @@
 
 #include "Key.hpp"
 
-namespace botwsavs {
+namespace totksavs {
 
 namespace fs {
 class ConfigFile;
@@ -51,4 +51,4 @@ private:
 };
 
 }  // namespace core
-}  // namespace botwsavs
+}  // namespace totksavs

@@ -1,7 +1,7 @@
 #include "Worker.hpp"
 #include "fs/Logger.hpp"
 
-namespace botwsavs::core {
+namespace totksavs::core {
 
 void Worker::Save(fs::ConfigFile& file) const {
     file.WriteInteger(named(mLevel));
@@ -35,4 +35,4 @@ bool Worker::LoadConfig() {
     return true;
 }
 
-}  // namespace botwsavs::core
+}  // namespace totksavs::core

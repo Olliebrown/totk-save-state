@@ -3,7 +3,7 @@
 #include "types.h"
 #include "util/StringBuffer.hpp"
 
-namespace botwsavs::core {
+namespace totksavs::core {
 enum Key : u32 {
     A = 0,
     B = 1 << 1,
@@ -85,4 +85,4 @@ void GetKeyString(u32 mask, util::StringBuffer<L>& outBuffer) {
     outBuffer.SafeDeleteEnd(1);
 }
 }  // namespace key
-}  // namespace botwsavs::core
+}  // namespace totksavs::core

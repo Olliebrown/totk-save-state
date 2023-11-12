@@ -2,7 +2,7 @@
 #include <prim/seadSafeString.h>
 #include <types.h>
 
-namespace botwsavs::util {
+namespace totksavs::util {
 
 template <typename T, u32 L>
 class NamedValue {
@@ -34,4 +34,4 @@ private:
     char mName[L];
     T mValue;
 };
-}  // namespace botwsavs::util
+}  // namespace totksavs::util

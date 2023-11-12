@@ -45,14 +45,14 @@ build: (_make "-DDEBUG")
 release EXTRA_DEFINES="": clean (_make EXTRA_DEFINES)
     mkdir -p release/atmosphere/contents/01007EF00011E000/exefs
     mkdir -p release/atmosphere/contents/01007EF00011E000/romfs/System
-    mkdir -p release/atmosphere/exefs_patches/botwsavs
-    mkdir -p release/botwsavs
-    cp build{{EXTRA_DEFINES}}/botwsavs.nso release/atmosphere/contents/01007EF00011E000/exefs/subsdk9
+    mkdir -p release/atmosphere/exefs_patches/totksavs
+    mkdir -p release/totksavs
+    cp build{{EXTRA_DEFINES}}/totksavs.nso release/atmosphere/contents/01007EF00011E000/exefs/subsdk9
     cp build{{EXTRA_DEFINES}}/app.npdm release/atmosphere/contents/01007EF00011E000/exefs/main.npdm
-    cp build{{EXTRA_DEFINES}}/8E9978D50BDD20B4C8395A106C27FFDE.ips release/atmosphere/exefs_patches/botwsavs/8E9978D50BDD20B4C8395A106C27FFDE.ips
+    cp build{{EXTRA_DEFINES}}/8E9978D50BDD20B4C8395A106C27FFDE.ips release/atmosphere/exefs_patches/totksavs/8E9978D50BDD20B4C8395A106C27FFDE.ips
     cp README.md release
     cp CHANGELOG.md release
-    echo "" > release/botwsavs/latest.txt
+    echo "" > release/totksavs/latest.txt
     echo -n {{VERSION_TEXT}} > release/atmosphere/contents/01007EF00011E000/romfs/System/Version.txt
     cd release && zip -r ../save-state-{{VERSION_TEXT}}{{EXTRA_DEFINES}}.zip *
 
@@ -99,9 +99,9 @@ get-latest:
 
 # Search for symbol in dumpped (debug) build
 find-symbol SYMBOL:
-    @objdump -T build-DDEBUG/botwsavs.elf | grep {{SYMBOL}} | cut -c 49-
+    @objdump -T build-DDEBUG/totksavs.elf | grep {{SYMBOL}} | cut -c 49-
 
 # Add symbol to config/symbols.ld and relink
 add-symbol SYMBOL ADDRESS: && build
     echo "$(just find-symbol {{SYMBOL}}) = {{ADDRESS}} - 0x3483000; /* {{SYMBOL}} */" >> config/symbols.ld
-    rm build-DDEBUG/botwsavs.*
+    rm build-DDEBUG/totksavs.*

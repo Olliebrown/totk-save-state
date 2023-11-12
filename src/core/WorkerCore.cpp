@@ -2,7 +2,7 @@
 #include "fs/Logger.hpp"
 #include "ui/OverlayString.hpp"
 
-namespace botwsavs::core {
+namespace totksavs::core {
 
 bool Worker::Init() {
     info("Init worker");
@@ -113,4 +113,4 @@ bool Worker::WorkSettingMode() {
 
     return true;
 }
-}  // namespace botwsavs::core
+}  // namespace totksavs::core

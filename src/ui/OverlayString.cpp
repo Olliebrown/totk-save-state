@@ -8,7 +8,7 @@
 
 #define BUF_LEN 200
 
-namespace botwsavs::ui {
+namespace totksavs::ui {
 
 static wchar sDisplayBuffer[BUF_LEN];
 static u64 sDisplayBufferLength = 0;
@@ -49,4 +49,4 @@ void ShowOriginalMessage(u64 idx) {
     mem::KingPtr::ShowInfoOverlayWithString(idx, reinterpret_cast<const void*>(&sUselessString));
 }
 
-}  // namespace botwsavs::ui
+}  // namespace totksavs::ui

@@ -13,7 +13,7 @@ include $(DEVKITPRO)/libnx/switch_rules
 # Variables
 
 # Target name
-TARGET          := botwsavs
+TARGET          := totksavs
 
 # DIRECTORIES
 # Build Output (This mk file operates inside the build folder)
@@ -31,21 +31,16 @@ CONFIG_DIR		:= $(ROOT_DIR)/config
 
 # Scan for nested source directories
 ALL_SOURCES_DIRS	:= 	$(shell find $(SOURCE_DIR) -type d)
+
 # Library paths
 LIBDIRS :=  $(PORTLIBS) $(LIBNX)
+
 # Include paths
 ALL_INCLUDE_DIRS	:=	\
 $(SOURCE_DIR) \
 ${LIB_DIR}/nnheaders/include \
 $(LIB_DIR)/sead/include  \
 $(LIB_DIR)/botw
-# $(LIB_DIR)/locked/skyline/include 
-# $(LIB_DIR)/locked/libeiffel/include 
-# $(LIB_DIR)/sync/agl/include 
-
-
-# ${LIB_DIR}/sync/xlink2/include 
-# ${LIB_DIR}/sync/botw/src
 
 # VPATH for make to search for files
 VPATH	:=	$(foreach dir,$(ALL_SOURCES_DIRS),$(CURDIR)/$(dir))

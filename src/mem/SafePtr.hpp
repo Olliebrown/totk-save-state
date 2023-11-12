@@ -3,7 +3,7 @@
 #include "fs/Logger.hpp"
 #include "types.h"
 
-namespace botwsavs::mem {
+namespace totksavs::mem {
 
 inline bool PtrLooksSafe(void* p) {
     u64 raw = reinterpret_cast<u64>(p);
@@ -93,4 +93,4 @@ private:
     T* mPtr;
 };
 
-}  // namespace botwsavs::mem
+}  // namespace totksavs::mem

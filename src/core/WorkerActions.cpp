@@ -3,7 +3,7 @@
 #include "fs/Logger.hpp"
 #include "ui/OverlayString.hpp"
 
-namespace botwsavs::core {
+namespace totksavs::core {
 
 void Worker::ExecuteSave() {
     info("Saving state to memory");
@@ -128,4 +128,4 @@ void Worker::DisplayStateError(State& state) {
     }
 }
 
-}  // namespace botwsavs::core
+}  // namespace totksavs::core

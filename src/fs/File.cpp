@@ -2,7 +2,7 @@
 
 #include "File.hpp"
 
-namespace botwsavs::fs {
+namespace totksavs::fs {
 
 File::File(const char* path) {
     mPath = path;
@@ -112,4 +112,4 @@ s64 File::Read(FileBuffer& buffer) {
     return static_cast<s64>(readSize);
 }
 
-}  // namespace botwsavs::fs
+}  // namespace totksavs::fs

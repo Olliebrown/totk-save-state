@@ -2,7 +2,7 @@
 
 #include "Time.hpp"
 
-namespace botwsavs::util {
+namespace totksavs::util {
 
 void CurrentTimeString(TimeBuffer& outBuffer) {
     if (!nn::time::IsInitialized()) {
@@ -26,4 +26,4 @@ void CurrentTimeString(TimeBuffer& outBuffer) {
     outBuffer.SafeAppendF("%02hu", calendarTime.second);
 }
 
-}  // namespace botwsavs::util
+}  // namespace totksavs::util

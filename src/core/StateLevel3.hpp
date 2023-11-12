@@ -2,7 +2,7 @@
 
 #include "StateStorage.hpp"
 
-namespace botwsavs::core {
+namespace totksavs::core {
 
 class StateLevel3 : public StateStorage {
 public:
@@ -37,4 +37,4 @@ private:
 
     s32 mCountOffset;
 };
-}  // namespace botwsavs::core
+}  // namespace totksavs::core

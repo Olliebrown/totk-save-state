@@ -2,7 +2,7 @@
 #include "fs/ConfigFile.hpp"
 #include "mem/GamePtr.h"
 
-namespace botwsavs::core {
+namespace totksavs::core {
 
 void StateLevel1::ReadFromGame() {
     ReadMemory(named(mem::GamePtr::Health()), &mHealth);
@@ -52,4 +52,4 @@ void StateLevel1::WriteToFile(fs::ConfigFile& file) const {
     file.WriteFloat(named(mCameraTilt));
 }
 
-}  // namespace botwsavs::core
+}  // namespace totksavs::core

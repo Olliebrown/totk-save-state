@@ -1,6 +1,6 @@
 #pragma once
 
-namespace botwsavs {
+namespace totksavs {
 
 namespace core {
 
@@ -10,4 +10,4 @@ void WorkerMain();
 
 }  // namespace core
 
-}  // namespace botwsavs
+}  // namespace totksavs

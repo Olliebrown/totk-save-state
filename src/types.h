@@ -37,18 +37,18 @@ typedef char16_t wchar;
 
 // log functions
 #ifdef DEBUG
-#define debug(mes) botwsavs::fs::Logger::Instance().Debug(mes)
-#define debugf(mes, value) botwsavs::fs::Logger::Instance().DebugF(mes, value)
+#define debug(mes) totksavs::fs::Logger::Instance().Debug(mes)
+#define debugf(mes, value) totksavs::fs::Logger::Instance().DebugF(mes, value)
 #else
 #define debug(mes) 
 #define debugf(mes)
 #endif
-#define info(mes) botwsavs::fs::Logger::Instance().Info(mes)
-#define warn(mes) botwsavs::fs::Logger::Instance().Warn(mes)
-#define error(mes) botwsavs::fs::Logger::Instance().Error(mes)
-#define infof(mes, value) botwsavs::fs::Logger::Instance().InfoF(mes, value)
-#define warnf(mes, value) botwsavs::fs::Logger::Instance().WarnF(mes, value)
-#define errorf(mes, value) botwsavs::fs::Logger::Instance().ErrorF(mes, value)
+#define info(mes) totksavs::fs::Logger::Instance().Info(mes)
+#define warn(mes) totksavs::fs::Logger::Instance().Warn(mes)
+#define error(mes) totksavs::fs::Logger::Instance().Error(mes)
+#define infof(mes, value) totksavs::fs::Logger::Instance().InfoF(mes, value)
+#define warnf(mes, value) totksavs::fs::Logger::Instance().WarnF(mes, value)
+#define errorf(mes, value) totksavs::fs::Logger::Instance().ErrorF(mes, value)
 
 #define nameof(x) #x
 #define named(x) #x, x

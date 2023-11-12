@@ -44,13 +44,13 @@ def run(console_ip, local_path, command):
 # Deploy
 def set(ftpw, local_path):
     """Send save state to console"""
-    target_path = "botwsavs/restore.txt"
+    target_path = "totksavs/restore.txt"
     ftpw.send_file(local_path, target_path)
 
 # Clean
 def get(ftpw, local_path):
     """Remove deployment on console"""
-    target_path = "botwsavs/latest.txt"
+    target_path = "totksavs/latest.txt"
     ftpw.retrive_file(local_path, target_path)
 
 class FtpWrapper:

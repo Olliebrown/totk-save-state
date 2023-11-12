@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include "types.h"
 
-namespace botwsavs::ui {
+namespace totksavs::ui {
 
 struct WideString {
     wchar* content = nullptr;
@@ -56,4 +56,4 @@ inline void ShowSetKeyBinding(const char* keyName) {
     ShowFormattedMessage("Configure %s key (Hold for 3s)", keyName);
 }
 
-}  // namespace botwsavs::ui
+}  // namespace totksavs::ui

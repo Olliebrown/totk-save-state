@@ -3,7 +3,6 @@ build-D*
 release
 crash_reports
 runtime
-.vscode
 *.log
 *.zip
 temp.txt

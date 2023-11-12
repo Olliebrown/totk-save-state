@@ -1,4 +1,4 @@
-#define MODULE_NAME "BotwSavs"
+#define MODULE_NAME "totksavs"
 #define MODULE_NAME_LEN 8
 
 // rtld working object

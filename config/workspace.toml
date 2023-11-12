@@ -1,10 +1,10 @@
 [ftp]
 crash_reports = "atmosphere/crash_reports"
-runtime = "botwsavs"
+runtime = "totksavs"
 
 # Mod files
 [[ftp.file]]
-local = "build-DDEBUG/botwsavs.nso"
+local = "build-DDEBUG/totksavs.nso"
 target = "atmosphere/contents/01007EF00011E000/exefs/subsdk9"
 
 [[ftp.file]]
@@ -13,7 +13,7 @@ target = "atmosphere/contents/01007EF00011E000/exefs/main.npdm"
 
 [[ftp.file]]
 local = "build-DDEBUG/8E9978D50BDD20B4C8395A106C27FFDE.ips"
-target = "atmosphere/exefs_patches/botwsavs/8E9978D50BDD20B4C8395A106C27FFDE.ips"
+target = "atmosphere/exefs_patches/totksavs/8E9978D50BDD20B4C8395A106C27FFDE.ips"
 
 [ips]
 mod_offset = "0x3483000" # this is used for address conversion for branching
@@ -25,11 +25,11 @@ offset = "0"
 # Runtime placeholder/version files
 [[ftp.file]]
 local = "build-DDEBUG/DebugVersion.txt"
-target = "botwsavs/main.log"
+target = "totksavs/main.log"
 
 [[ftp.file]]
 local = "build-DDEBUG/DebugVersion.txt"
-target = "botwsavs/latest.txt"
+target = "totksavs/latest.txt"
 
 [[ftp.file]]
 local = "build-DDEBUG/DebugVersion.txt"

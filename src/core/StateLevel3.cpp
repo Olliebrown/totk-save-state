@@ -7,7 +7,7 @@
 
 #include "StateLevel3.hpp"
 
-namespace botwsavs::core {
+namespace totksavs::core {
 
 void StateLevel3::ReadFromGame() {
     ReadMemory(named(mem::GamePtr::TimeOfDayPaused()), &mTimeOfDayPaused);
@@ -134,4 +134,4 @@ void StateLevel3::WriteToFile(fs::ConfigFile& file) const {
     file.WriteInteger(named(mCountOffset));
 }
 
-}  // namespace botwsavs::core
+}  // namespace totksavs::core

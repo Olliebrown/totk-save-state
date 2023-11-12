@@ -8,11 +8,11 @@
 
 #include "types.h"
 
-#define LATEST_TXT_PATH "sd:/botwsavs/latest.txt"
-#define RESTORE_TXT_PATH "sd:/botwsavs/restore.txt"
+#define LATEST_TXT_PATH "sd:/totksavs/latest.txt"
+#define RESTORE_TXT_PATH "sd:/totksavs/restore.txt"
 #define STATE_SAVE_FILE_VERSION 4
 
-namespace botwsavs::core {
+namespace totksavs::core {
 class State : fs::Config {
 public:
     u32 GetErrorMask() const {
@@ -52,4 +52,4 @@ private:
     StateLevel3 mStorageLevel3;
 };
 
-}  // namespace botwsavs::core
+}  // namespace totksavs::core

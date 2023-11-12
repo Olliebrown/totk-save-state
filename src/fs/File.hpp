@@ -2,7 +2,7 @@
 #include <nn/fs.h>
 
 #include "types.h"
-namespace botwsavs {
+namespace totksavs {
 namespace util {
 template <u32 T>
 class StringBuffer;
@@ -41,4 +41,4 @@ private:
 };
 
 }  // namespace fs
-}  // namespace botwsavs
+}  // namespace totksavs

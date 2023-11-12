@@ -6,7 +6,7 @@
 #include "File.hpp"
 #include "util/StringBuffer.hpp"
 
-namespace botwsavs::fs {
+namespace totksavs::fs {
 // Note that Logger is not thread safe
 class Logger {
 public:
@@ -77,8 +77,8 @@ private:
     bool mReady = false;
     // prevent logger error being logged and going into infinite recursion
     bool mLogging = false;
-    File mFile{"sd:/botwsavs/main.log"};
+    File mFile{"sd:/totksavs/main.log"};
     FileBuffer mOutputBuffer;
 };
 
-}  // namespace botwsavs::fs
+}  // namespace totksavs::fs

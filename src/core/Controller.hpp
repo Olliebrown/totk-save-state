@@ -6,7 +6,7 @@ namespace sead {
 struct Controller;
 }
 
-namespace botwsavs {
+namespace totksavs {
 
 namespace core {
 class Controller {
@@ -34,4 +34,4 @@ private:
 };
 
 }  // namespace core
-}  // namespace botwsavs
+}  // namespace totksavs

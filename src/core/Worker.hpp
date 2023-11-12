@@ -6,9 +6,9 @@
 #include "KeyMgr.hpp"
 #include "State.hpp"
 
-#define WORKER_TXT_PATH "sd:/botwsavs/worker.txt"
+#define WORKER_TXT_PATH "sd:/totksavs/worker.txt"
 
-namespace botwsavs {
+namespace totksavs {
 
 namespace core {
 
@@ -76,4 +76,4 @@ private:
 
 }  // namespace core
 
-}  // namespace botwsavs
+}  // namespace totksavs

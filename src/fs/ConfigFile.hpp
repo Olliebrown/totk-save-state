@@ -5,7 +5,7 @@
 
 #pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Wstrict-aliasing"
-namespace botwsavs {
+namespace totksavs {
 
 namespace fs {
 
@@ -177,5 +177,5 @@ private:
 
 }  // namespace fs
 
-}  // namespace botwsavs
+}  // namespace totksavs
 #pragma GCC diagnostic pop

@@ -4,7 +4,7 @@
 #include "mem/SafePtr.hpp"
 #include "types.h"
 
-namespace botwsavs {
+namespace totksavs {
 
 namespace fs {
 class ConfigFile;
@@ -82,4 +82,4 @@ protected:
 };
 
 }  // namespace core
-}  // namespace botwsavs
+}  // namespace totksavs

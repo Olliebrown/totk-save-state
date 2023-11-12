@@ -1,6 +1,6 @@
 #include "State.hpp"
 
-namespace botwsavs::core {
+namespace totksavs::core {
 
 bool State::ReadFromGame(u32 level) {
     ClearError();
@@ -68,4 +68,4 @@ void State::Save(fs::ConfigFile& file) const {
     mStorageLevel3.WriteToFile(file);
 }
 
-}  // namespace botwsavs::core
+}  // namespace totksavs::core

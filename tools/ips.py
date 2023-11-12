@@ -13,7 +13,7 @@ import toml
 # consts
 SRC = "patch"
 PATCH_EXTENSION = ".patch.s"
-MOD_NAME = "botwsavs"
+MOD_NAME = "totksavs"
 
 NSO_HEADER_LEN = 0x100
 
@@ -309,8 +309,8 @@ def resolve_bl_symbol(branch_address, mod_offset_from_target, branch_symbol):
     return None
 
 # Memoization
-BOTW_IGD_SYMBOL_MAP = None
-BOTW_IGD_SYMBOL_CACHE = {}
+TOTK_IGD_SYMBOL_MAP = None
+TOTK_IGD_SYMBOL_CACHE = {}
 def search_mod_symbol_addr(symbol):
     """
         Return the address of the symbol in mod, relative to start of mod
@@ -318,22 +318,22 @@ def search_mod_symbol_addr(symbol):
         The result is memoized
     """
     # pylint: disable-next=global-statement
-    global BOTW_IGD_SYMBOL_MAP
-    if symbol in BOTW_IGD_SYMBOL_CACHE:
-        return BOTW_IGD_SYMBOL_CACHE[symbol]
+    global TOTK_IGD_SYMBOL_MAP
+    if symbol in TOTK_IGD_SYMBOL_CACHE:
+        return TOTK_IGD_SYMBOL_CACHE[symbol]
     # Lazy load symbol map
-    if BOTW_IGD_SYMBOL_MAP is None:
+    if TOTK_IGD_SYMBOL_MAP is None:
         with open(join(BUILD_DIR, f"{MOD_NAME}.map"), 'r', encoding="utf-8") as map_file:
-            BOTW_IGD_SYMBOL_MAP = map_file.read()
+            TOTK_IGD_SYMBOL_MAP = map_file.read()
 
     func_search_regex = symbol + r'\('
-    pos, address =  find_symbol_address(func_search_regex, 0, BOTW_IGD_SYMBOL_MAP)
+    pos, address =  find_symbol_address(func_search_regex, 0, TOTK_IGD_SYMBOL_MAP)
     if pos == -1:
         print(f"Error: Cannot find {MOD_NAME} symbol: {symbol}")
         return None
     # check uniqueness
     while True:
-        pos, other_address = find_symbol_address(func_search_regex, pos, BOTW_IGD_SYMBOL_MAP)
+        pos, other_address = find_symbol_address(func_search_regex, pos, TOTK_IGD_SYMBOL_MAP)
         if pos == -1:
             break
 
@@ -341,7 +341,7 @@ def search_mod_symbol_addr(symbol):
             print(f"Error: Ambiguous {MOD_NAME} symbol: {symbol}")
             return None
 
-    BOTW_IGD_SYMBOL_CACHE[symbol] = address
+    TOTK_IGD_SYMBOL_CACHE[symbol] = address
     return ctypes.c_long(address).value
 
 def find_symbol_address(func_search_regex, start_pos, map_file_str):
