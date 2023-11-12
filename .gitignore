@@ -8,3 +8,4 @@ runtime
 temp.txt
 *.pack
 .env
+*.cid
