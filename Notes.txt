@@ -2,12 +2,50 @@
 Addresses
 - Cur Health: 385A58A348
 - Max Health: 385A58A358
-
 - Cur Stamina: 385A3A3C0C
-- Max Stamina: 
+
+Note: Y = height
+- Player Mesh Position
+    - X: 385A3D28BC
+    - Y: 385A3D28CC
+    - Z: 385A3D28DC
+
+- Player Physics Body Position ???
+    - X: 38755646D0
+    - Y: 38755646D4
+    - Z: 38755646D8
+
+- Camera Look Target
+    - X: 385A37677C
+    - Y: 385A376780
+    - Z: 385A376784
+
+- Rotation:
+    - [0]:
+    - [1]:
+    - [2]:
+    - [3]:
+    - [4]:
+    - [5]:
+    - [6]:
+    - [7]:
+    - [8]:
+    - [9]:
+    - [10]:
+    - [11]:
+    - [12]:
+    - [13]:
+    - [14]:
+    - [15]:
 
 Pointer Search (with jnoexes and 14 threads)
 NOTE: If depth is higher than 4, expect steps 5 and higher to take a VERY long time.
+Dump file: 1700021956531.dmp
+Main Start: 25C1A04000
+Main End: 25C606A000
+Heap Start: 3843200000
+Heap End: 38BFA00000
+
 - Cur Health: 
 - Max Health: 
-
+- Cur Stamina: 
