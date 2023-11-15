@@ -3,7 +3,11 @@ Addresses
 - Cur Health: 385A58A348
 - Max Health: 385A58A358
 
+- Cur Stamina: 385A3A3C0C
+- Max Stamina: 
+
 Pointer Search (with jnoexes and 14 threads)
 NOTE: If depth is higher than 4, expect steps 5 and higher to take a VERY long time.
 - Cur Health: 
 - Max Health: 
+
