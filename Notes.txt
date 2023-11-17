@@ -29,9 +29,21 @@ Main End: 25C606A000
 Heap Start: 3843200000
 Heap End: 38BFA00000
 
-- Cur Health:       [[[[main+464AC00]+130]+1F0]+158]+118
-- Max Health:       [[[[main+464AC00]+130]+1F0]+158]+128
+11/16 Dump
+- Health: 04F4989128
+- Max Health: 04F4989138
+
+- Physics Jitter: 04F4762534 (x), 04F4762538 (y), 04F476253C (z)
+- Camera Look At: 04F4775564 (x), 04F4775568 (y), 04F477556C (z)
+- Mesh Location:  04F47D16A4 (x), 04F47D16B4 (y), 04F47D16B4 (z)
+
+Pointer Search
+Dump file: 1700181262829.dmp
+Main Start: 5982204000
+Main End: 5984CAB000
+Heap Start: 04DD600000
+Heap End: 0559E00000
+
+---------------------------------------------------------------------
 - Cur Stamina:      [[main+4649C10]+40]+934
-- Player Mesh Pos:  [[[[main+464AD20]+A8]+60]+30]+64
-- Player Phys Pos:  [[[main+45BA998]+60]+20]+19B0
-- Camera Look Tgt:  [[[[[[main+464AD88]+220]+48]+28]+198]+2B8]+AC
+- Max Stamina:      [[main+4649C10]+40]+938
