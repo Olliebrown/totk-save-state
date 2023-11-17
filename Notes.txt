@@ -47,3 +47,14 @@ Heap End: 0559E00000
 ---------------------------------------------------------------------
 - Cur Stamina:      [[main+4649C10]+40]+934
 - Max Stamina:      [[main+4649C10]+40]+938
+:-(
+- Cur Health:       [[[[main+464AC00]+130]+1F0]+158]+118
+- Max Health:       [[[[main+464AC00]+130]+1F0]+158]+128
+
+:-)
+- Cur Stamina:      [[main+4649C10]+40]+934
+
+:-(
+- Player Mesh Pos:  [[[[main+464AD20]+A8]+60]+30]+64
+- Player Phys Pos:  [[[main+45BA998]+60]+20]+19B0
+- Camera Look Tgt:  [[[[[[main+464AD88]+220]+48]+28]+198]+2B8]+AC
