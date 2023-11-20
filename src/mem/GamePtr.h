@@ -5,11 +5,11 @@
 #define GamePtrDefine(TYPE, NAME, PATH) inline SafePtr<TYPE> NAME() { return (PATH).AsPtrTo<TYPE>(); } 
 
 namespace ksys::act{
-struct BaseProc;
+    struct BaseProc;
 }
 
 namespace uking::ui{
-struct PouchItem;
+    struct PouchItem;
 }
 
 namespace totksavs::mem::GamePtr {

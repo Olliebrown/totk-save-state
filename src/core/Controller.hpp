@@ -3,35 +3,34 @@
 #include "types.h"
 
 namespace sead {
-struct Controller;
+    struct Controller;
 }
 
 namespace totksavs {
+    namespace core {
+    class Controller {
+        public:
+            Controller() = default;
+            ~Controller() { mpController = nullptr; }
 
-namespace core {
-class Controller {
-public:
-    Controller() = default;
-    ~Controller() { mpController = nullptr; }
+            bool IsInitialized() {
+                if (!mpController) {
+                    TryGetController();
+                }
+                return mpController != nullptr;
+            }
 
-    bool IsInitialized() {
-        if (!mpController) {
-            TryGetController();
-        }
-        return mpController != nullptr;
-    }
+            bool IsOnlyHolding(u32 mask);
 
-    bool IsOnlyHolding(u32 mask);
+            u32 GetHoldKeys();
 
-    u32 GetHoldKeys();
+        private:
+            // Return true if controller is cached successfully
+            bool TryGetController();
 
-private:
-    // Return true if controller is cached succesfully
-    bool TryGetController();
+        private:
+            sead::Controller* mpController = nullptr;
+        };
 
-private:
-    sead::Controller* mpController = nullptr;
-};
-
-}  // namespace core
+    }  // namespace core
 }  // namespace totksavs

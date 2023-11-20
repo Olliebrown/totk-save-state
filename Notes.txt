@@ -4,23 +4,9 @@ Addresses
 - Max Health: 385A58A358
 - Cur Stamina: 385A3A3C0C
 
-Note: Y = height
-- Player Mesh Position
-    - X: 385A3D28BC
-    - Y: 385A3D28CC
-    - Z: 385A3D28DC
-
-- Player Physics Body Position ???
-    - X: 38755646D0
-    - Y: 38755646D4
-    - Z: 38755646D8
-
-- Camera Look Target
-    - X: 385A37677C
-    - Y: 385A376780
-    - Z: 385A376784
-
-- Rotation:
+- Physics Jitter: 38755646D0, 38755646D4, 38755646D8
+- Camera Look At: 385A37677C, 385A376780, 385A376784
+- Mesh Location:  385A3D28BC, 385A3D28CC, 385A3D28DC
 
 Pointer Search
 Dump file: 1700021956531.dmp
@@ -33,9 +19,9 @@ Heap End: 38BFA00000
 - Health: 04F4989128
 - Max Health: 04F4989138
 
-- Physics Jitter: 04F4762534 (x), 04F4762538 (y), 04F476253C (z)
-- Camera Look At: 04F4775564 (x), 04F4775568 (y), 04F477556C (z)
-- Mesh Location:  04F47D16A4 (x), 04F47D16B4 (y), 04F47D16B4 (z)
+- Physics Jitter: 04F4762534, 04F4762538, 04F476253C
+- Camera Look At: 04F4775564, 04F4775568, 04F477556C
+- Mesh Location:  04F47D16A4, 04F47D16B4, 04F47D16B4
 
 Pointer Search
 Dump file: 1700181262829.dmp
@@ -45,16 +31,8 @@ Heap Start: 04DD600000
 Heap End: 0559E00000
 
 ---------------------------------------------------------------------
-- Cur Stamina:      [[main+4649C10]+40]+934
-- Max Stamina:      [[main+4649C10]+40]+938
-:-(
-- Cur Health:       [[[[main+464AC00]+130]+1F0]+158]+118
-- Max Health:       [[[[main+464AC00]+130]+1F0]+158]+128
-
-:-)
-- Cur Stamina:      [[main+4649C10]+40]+934
-
-:-(
-- Player Mesh Pos:  [[[[main+464AD20]+A8]+60]+30]+64
-- Player Phys Pos:  [[[main+45BA998]+60]+20]+19B0
-- Camera Look Tgt:  [[[[[[main+464AD88]+220]+48]+28]+198]+2B8]+AC
+- Cur Health:            [[[[[main+45D6750]+480]+130]+1F0]+150]+198
+- Max Health:            [[[[[main+45D6750]+480]+130]+1F0]+150]+1A8
+- Cur Stamina:           [[main+4649C10]+40]+934
+- Bonus Stamina:         [[main+4649C10]+40]+938
+- Mesh Transform Matrix: [[[[main+4649DE8]+70]+1A8]]+58
