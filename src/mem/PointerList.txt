@@ -1,6 +1,6 @@
 Pointer List
 
-Health/Stam:
+Health/Stamina:
 - Cur Health:            [[[[[main+45D6750]+480]+130]+1F0]+150]+198
 - Max Health:            [[[[[main+45D6750]+480]+130]+1F0]+150]+1A8
 - Cur Stamina:           [[main+4649C10]+40]+934

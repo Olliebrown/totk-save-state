@@ -8,10 +8,6 @@ namespace ksys::act{
     struct BaseProc;
 }
 
-namespace uking::ui{
-    struct PouchItem;
-}
-
 namespace totksavs::mem::GamePtr {
     // Singletons
     // main[0x2CA6D48] ActorSystem
