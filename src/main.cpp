@@ -18,7 +18,10 @@ extern "C" void application_init() {
     totksavs::fs::File workerTxt("sd:/totksavs/worker.txt");
     workerTxt.Create();
 
+    debug("Application initialized");
+
     // Start worker
+    debug("Starting worker thread");
     totksavs::core::StartWorkerThread();
 }
 

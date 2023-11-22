@@ -3,42 +3,43 @@
 
 #include "types.h"
 namespace totksavs {
-namespace util {
-template <u32 T>
-class StringBuffer;
-}
-namespace fs {
-using FileBuffer = util::StringBuffer<1024>;
+    namespace util {
+        template <u32 T>
+        class StringBuffer;
+    }
 
-class File {
-public:
-    File(const char* path);
-    ~File();
+    namespace fs {
+        using FileBuffer = util::StringBuffer<1024>;
 
-    // Check if file exists
-    bool Exists();
-    // Try creating a new file
-    bool Create();
-    // Open the file for read and write
-    bool Open();
-    // Close the file
-    bool Close();
-    // Set file to empty
-    bool Clear();
-    // Write to file
-    bool Write(const FileBuffer& buffer);
-    // Read into buffer
-    s64 Read(FileBuffer& buffer);
+        class File {
+        public:
+            File(const char* path);
+            ~File();
 
-    const char* Path() const { return mPath; }
-    bool isOpened() const { return mOpen; }
+            // Check if file exists
+            bool Exists();
+            // Try creating a new file
+            bool Create();
+            // Open the file for read and write
+            bool Open();
+            // Close the file
+            bool Close();
+            // Set file to empty
+            bool Clear();
+            // Write to file
+            bool Write(const FileBuffer& buffer);
+            // Read into buffer
+            s64 Read(FileBuffer& buffer);
 
-private:
-    const char* mPath = nullptr;
-    bool mOpen = false;
-    nn::fs::FileHandle mHandle;
-    u64 mOffset = 0;
-};
+            const char* Path() const { return mPath; }
+            bool isOpened() const { return mOpen; }
 
-}  // namespace fs
+        private:
+            const char* mPath = nullptr;
+            bool mOpen = false;
+            nn::fs::FileHandle mHandle;
+            u64 mOffset = 0;
+        };
+
+    }  // namespace fs
 }  // namespace totksavs

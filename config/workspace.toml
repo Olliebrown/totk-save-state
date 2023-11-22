@@ -5,21 +5,17 @@ runtime = "totksavs"
 # Mod files
 [[ftp.file]]
 local = "build-DDEBUG/totksavs.nso"
-target = "atmosphere/contents/01007EF00011E000/exefs/subsdk9"
+target = "atmosphere/contents/0100F2C011586000/exefs/subsdk9"
 
 [[ftp.file]]
 local = "build-DDEBUG/app.npdm"
-target = "atmosphere/contents/01007EF00011E000/exefs/main.npdm"
-
-[[ftp.file]]
-local = "build-DDEBUG/8E9978D50BDD20B4C8395A106C27FFDE.ips"
-target = "atmosphere/exefs_patches/totksavs/8E9978D50BDD20B4C8395A106C27FFDE.ips"
+target = "atmosphere/contents/0100F2C011586000/exefs/main.npdm"
 
 [ips]
 mod_offset = "0x3483000" # this is used for address conversion for branching
 
-[ips.main160]
-id = "8E9978D50BDD20B4C8395A106C27FFDE"
+[ips.main100]
+id = "082CE09B06E33A123CB1E2770F5F9147"
 offset = "0"
 
 # Runtime placeholder/version files
@@ -33,4 +29,4 @@ target = "totksavs/latest.txt"
 
 [[ftp.file]]
 local = "build-DDEBUG/DebugVersion.txt"
-target = "atmosphere/contents/01007EF00011E000/romfs/System/Version.txt"
+target = "atmosphere/contents/0100F2C011586000/romfs/System/Version.txt"

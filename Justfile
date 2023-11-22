@@ -43,17 +43,17 @@ build: (_make "-DDEBUG")
 
 # Build release configuration and package
 release EXTRA_DEFINES="": clean (_make EXTRA_DEFINES)
-    mkdir -p release/atmosphere/contents/01007EF00011E000/exefs
-    mkdir -p release/atmosphere/contents/01007EF00011E000/romfs/System
+    mkdir -p release/atmosphere/contents/0100F2C011586000/exefs
+    mkdir -p release/atmosphere/contents/0100F2C011586000/romfs/System
     mkdir -p release/atmosphere/exefs_patches/totksavs
     mkdir -p release/totksavs
-    cp build{{EXTRA_DEFINES}}/totksavs.nso release/atmosphere/contents/01007EF00011E000/exefs/subsdk9
-    cp build{{EXTRA_DEFINES}}/app.npdm release/atmosphere/contents/01007EF00011E000/exefs/main.npdm
-    cp build{{EXTRA_DEFINES}}/8E9978D50BDD20B4C8395A106C27FFDE.ips release/atmosphere/exefs_patches/totksavs/8E9978D50BDD20B4C8395A106C27FFDE.ips
+    cp build{{EXTRA_DEFINES}}/totksavs.nso release/atmosphere/contents/0100F2C011586000/exefs/subsdk9
+    cp build{{EXTRA_DEFINES}}/app.npdm release/atmosphere/contents/0100F2C011586000/exefs/main.npdm
+    cp build{{EXTRA_DEFINES}}/082CE09B06E33A123CB1E2770F5F9147.ips release/atmosphere/exefs_patches/totksavs/082CE09B06E33A123CB1E2770F5F9147.ips
     cp README.md release
     cp CHANGELOG.md release
     echo "" > release/totksavs/latest.txt
-    echo -n {{VERSION_TEXT}} > release/atmosphere/contents/01007EF00011E000/romfs/System/Version.txt
+    echo -n {{VERSION_TEXT}} > release/atmosphere/contents/0100F2C011586000/romfs/System/Version.txt
     cd release && zip -r ../save-state-{{VERSION_TEXT}}{{EXTRA_DEFINES}}.zip *
 
 # Build gold rush configuration and package
